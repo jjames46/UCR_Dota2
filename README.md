@@ -18,6 +18,9 @@ E(W) = w1, ... , wk, where w is 1 or -1 to represent a character win. Of course,
 P1(w1|p1) = w1, ... , wk.
 Thus, as a first step in my project, I calculated two things, for each character. Within the loop, I did not discriminate between whether team 1 or team 2 won, I counted each win as a success, to reduce confusion for myself later. I only care how often a character won, not which team they were on when they won.
 
+To see the  desired result, using the Game Simulator script at 10000 games and choose a particular character. I set it to Skeleton King, after adjusting his charwinrate to be .7044 instead of .5544, so that the results could be more apparent. The simulation is a bernouli distributed series of games, based on the cumulative mean winrate of each character on the team. Characters on each team are randomly picked, except the chosen character. The chosen character is always on team 2. After running the simulation, the wins for each team are stored in the t1wins and t2wins vectors.
+These vectors can be dropped right in to the matrix profile, with length 500, to indicate a string of 500 straight wins in a row. Ideally, there should be no obvious string that long, because that would indicate a character is highly favored to win.
+Bumping up the number of simulations and string length, it becomes easier to get a more granular image of wins.
 
 
 As a brief aside, there is further analysis to be done in this regard, as teams are not playing from the same positions, but rather a reflected side of the map. As an extension of this project, it could easily be expanded upon by determining whether a character tends to perform better based on which side they play on.
