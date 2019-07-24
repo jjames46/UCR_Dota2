@@ -22,5 +22,6 @@ To see the  desired result, using the Game Simulator script at 10000 games and c
 These vectors can be dropped right in to the matrix profile, with length 500, to indicate a string of 500 straight wins in a row. Ideally, there should be no obvious string that long, because that would indicate a character is highly favored to win.
 Bumping up the number of simulations and string length, it becomes easier to get a more granular image of wins.
 
+I've uploaded images of the graphs from the UCR main analysis script, as well as the skewed and normal simulations with the chosen character.
 
 As a brief aside, there is further analysis to be done in this regard, as teams are not playing from the same positions, but rather a reflected side of the map. As an extension of this project, it could easily be expanded upon by determining whether a character tends to perform better based on which side they play on.
