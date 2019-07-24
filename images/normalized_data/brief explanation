@@ -1,0 +1,15 @@
+The first thing to notice with the distribution of both character selection rate and character win rate is the skewness and orientation.
+For character selection, this downward sloping trajectory makes sense, because over the course of the period, it is expected that every character,
+at one point or another, will be selected. This is one of the weaknesses of my model, as it cannot account for the nuances of picks and counter-picks, etc.
+However, the displayed data does fit with my expectation, as nearly all characters would have roughly 5-10% pick rate frequency, given
+there are 10 players, and characters are not replaced.
+
+The Histogram of the pickrate data also backs up the curvature, indicating that the discrete values appear as a normal distribution, minus
+the few outliers of slightly stronger characters or characters that are favored in particular moments or roles.
+
+This same thought process also fits with the character winrate data. One would expect that characters tend to win about as often as they lose,
+at least that would be the ideal. The data is normally distributed over the 50% mark, which also confirms my expectation. At the point
+in time where the data was collected, the game was relatively stable and balanced for each character.
+
+The historgram of the winrate data displays the steep slope as the discrete winrates trend downward the higher the winrate goes. Additionally
+reinforcing my expectation that most characters would fall below the 50% mark.
