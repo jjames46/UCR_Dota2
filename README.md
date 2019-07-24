@@ -21,6 +21,7 @@ Thus, as a first step in my project, I calculated two things, for each character
 To see the  desired result, using the Game Simulator script at 10000 games and choose a particular character. I set it to Skeleton King, after adjusting his charwinrate to be .7044 instead of .5544, so that the results could be more apparent. The simulation is a bernouli distributed series of games, based on the cumulative mean winrate of each character on the team. Characters on each team are randomly picked, except the chosen character. The chosen character is always on team 2. After running the simulation, the wins for each team are stored in the t1wins and t2wins vectors.
 These vectors can be dropped right in to the matrix profile, with length 500, to indicate a string of 500 straight wins in a row. Ideally, there should be no obvious string that long, because that would indicate a character is highly favored to win.
 Bumping up the number of simulations and string length, it becomes easier to get a more granular image of wins.
+Looking at the Scrimp++ vectors, when the data is skewed, the values are more than double the original. In the normal simulation, the Scrimp++ vector tends to gravitate around 9-10, with minor variance, however with the .7044 winrate character it jumps to 28.
 
 I've uploaded images of the graphs from the UCR main analysis script, as well as the skewed and normal simulations with the chosen character.
 
