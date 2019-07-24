@@ -17,13 +17,20 @@ t2wins=[];
 
 %thus, this simulation only accounts for the win percentage of the randomly
 %selected heroes, with equal likelihood of selection
-games = 1000;
+games = 10000;
+
+%pick a character from the NAMES variable!
+chosencharacter = {'skeleton king'};
+simnames = names;
+idx = strcmp(simnames, chosencharacter);
+simnames(idx) = [];
 
 for g = 1:games+1
 
-    teams = datasample(names,10,'Replace',false);
+    teams = datasample(simnames,9,'Replace',false);
     team1 = teams(1:5);
     team2 = teams(6:end);
+    team2(end+1) = chosencharacter;
 
         %this loops through the team and pulls out the team winrate data, and the
         %pickrate data for fun, to determine which team has the higher likelihood

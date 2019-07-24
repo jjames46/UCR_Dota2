@@ -1,6 +1,6 @@
 clc
 %time stepping
-t = ([1:100])';
+t = ([1:100000])';
 window = [1 max(t) -1 1];
 %pick a character from the NAMES variable!
 chosencharacter = 'skeleton king';

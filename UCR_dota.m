@@ -96,6 +96,7 @@ legend('Pickrate','Winrate')
 subplot(2,1,2)
 hold on
 title('FFT of Picks and Wins')
+
 plot([1:111],fft(abs((charpickcount))),'b.-');
 plot([1:111],fft(abs((charwincount))),'r.-');
 legend('Pick Freq','Win Freq')
